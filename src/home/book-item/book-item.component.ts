@@ -11,7 +11,6 @@ export class BookItemComponent implements OnInit {
 @Input() left: string;
 @Input() bookDetail;
 @Input() zindex;
-@Input() visibility;
 @Input() top;
 @Input() index: number;
 @Output() moveItem = new EventEmitter();

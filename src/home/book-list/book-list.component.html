@@ -2,8 +2,15 @@
   <h2 class="f3 fw4 pa3 mv0 ">Albums</h2>
   <div class="cf pa2 collection-item albums">
     <ng-container *ngFor="let item of DUMY_BOOK; let i=index">
-      <app-book-item [zindex]="getZindex(i)" [index]='i' [bookDetail]="item" [left]="getLeft(i)" [width]='getWidth(i)'
-        [height]='getHeight(i)' [top]='getTop(i)' (moveItem)="onMoveItem($event)">
+      <app-book-item 
+      [zindex]="getZindex(i)" 
+      [index]='i' 
+      [bookDetail]="item" 
+      [left]="getLeft(i)" 
+      [width]='getWidth(i)'
+      [height]='getHeight(i)' 
+      [top]='getTop(i)' 
+      (moveItem)="onMoveItem($event)">
       </app-book-item>
     </ng-container>
   </div>

@@ -76,8 +76,8 @@ export class BookListComponent implements OnInit {
   }
 
   nextItem() {
-    const item = this.DUMY_BOOK.shift();
-    this.DUMY_BOOK.push(item);
+    this.DUMY_BOOK.shift();
+    this.DUMY_BOOK.push({...this.DUMY_BOOK[0]});
   }
 
   preItem() {
@@ -86,17 +86,6 @@ export class BookListComponent implements OnInit {
   }
 
   onMoveItem($event) {
-    // this.DUMY_BOOK.push(this.DUMY_BOOK[0]);
-    setTimeout(() => {
-      // this.DUMY_BOOK.shift();
-      this.swapItem(0, this.getItemLength - 1);
-    }, 1000);
-  }
-
-  swapItem(index1, index2) {
-    const b = this.DUMY_BOOK[index1];
-    this.DUMY_BOOK[index1] = this.DUMY_BOOK[index2];
-    this.DUMY_BOOK[index2] = b;
   }
 
   getZindex(index) {
@@ -141,7 +130,4 @@ export class BookListComponent implements OnInit {
     );
   }
 
-  getVisiable(index) {
-    return index === this.getItemLength - 1 ? 'hidden' : 'visible';
-  }
 }
