@@ -1,0 +1,18 @@
+<div (click)="onMoveItem()" 
+     [style.top.%]='top' 
+     [style.height.%]='height' 
+     [style.visibility]='visibility' 
+     [style.left.%]='isMoveItem ? -width : left' 
+     [style.width.%]='width' 
+     [style.z-index]='zindex' 
+     class="item fl pa2">
+  <!-- <a href="https://geo.itunes.apple.com/us/album/blonde/id1146195596?at=1l3vqFJ&mt=1&app=music" class="db link dim tc"> -->
+    <img src="{{bookDetail.urlImage}}" alt="Frank Ocean Blonde Album Cover" class="w-100 db outline black-10" />
+    <dl class="mt2 f6 lh-copy">
+      <dt class="clip">Title</dt>
+      <dd class="ml0 black truncate w-100">{{bookDetail.title}}</dd>
+      <dt class="clip">Artist</dt>
+      <dd class="ml0 gray truncate w-100">{{bookDetail.author}}</dd>
+    </dl>
+  <!-- </a> -->
+</div>

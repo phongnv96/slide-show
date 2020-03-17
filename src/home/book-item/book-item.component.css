@@ -1,0 +1,6 @@
+.item {
+    position: absolute;
+    transition: left 1s;
+    
+    /* transition-duration: 1 all; */
+} 

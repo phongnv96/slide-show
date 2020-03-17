@@ -1,0 +1,9 @@
+.collection-item {
+    position: relative;
+}
+.item {
+    position: absolute;
+}
+.albums {
+    height:500px ;
+}
